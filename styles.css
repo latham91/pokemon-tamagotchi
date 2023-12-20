@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
+
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.container {
+    width: 768px;
+    height: 350px;
+    border: 3px solid white;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.controls {
+    width: 768px;
+    border: 3px solid white;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.controls button {
+    width: 100%;
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.controls button:hover {
+    background-color: #adadad;
+    color: white;
+}
+
+.pet {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid white;
+}
+
+.pet:last-child {
+    border-right: none;
+}
+
+.pet img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.stats {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.stats h3 {
+    margin: 10px 0;
+    padding: 0;
+}
+
+/* STAT BARS */
+
+.health {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: crimson;
+    border-radius: 50px;
+    margin: 0;
+}
+
+
+.hunger {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: orange;
+    border-radius: 50px;
+    margin: 0;
+}
+
+.happiness {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: #cac600;
+    border-radius: 50px;
+    margin: 0;
+}
+
+.sleepiness {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: #0037ee;
+    border-radius: 50px;
+    margin: 0;
+
+}
+
+.stats-span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* UTILITY CLASSES */
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.text-4xl {
+    font-size: 2.5rem;
+}
+
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-full {
+    width: 100%;
+}
